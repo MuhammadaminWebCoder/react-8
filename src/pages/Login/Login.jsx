@@ -13,7 +13,7 @@ const Login = () => {
 
   function handleSubmitLogin(data) {
     setIsLoading(true)
-    const isUser = allUsers.some(item => item.username == data.userName && item.password == data.password)
+    const isUser = allUsers.some(item => item.userName == data.username && item.password == data.password)
     setTimeout(() => {
       if (isUser) {
         setToken(data)
