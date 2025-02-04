@@ -7,7 +7,7 @@ const DashboardLayout = ({children}) => {
         <Header/>
         <div className='flex justify-baseline'>
             <Navbar/>
-            <div className="w-[78%] h-[100%] overflow-y-auto">
+            <div className="w-[80%] h-[100%] overflow-y-auto">
                 {children}
             </div>
         </div>

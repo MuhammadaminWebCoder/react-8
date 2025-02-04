@@ -4,5 +4,81 @@
             "userName":"Muhammadamin",
             "password":"123"
         }
+    ],
+    "categories":[
+        {
+            "id":1,
+            "path":"/",
+            "title":"Asosiy"
+        },
+        {
+            "id":2,
+            "path":"/teachers",
+            "title":"Ustozlar"
+        },
+        {
+            "id":3,
+            "path":"/students",
+            "title":"O'quvchilar"
+        },
+        {
+            "id":4,
+            "path":"/groups",
+            "title":"Guruxlar"
+        },
+        {
+            "id":5,
+            "path":"/market",
+            "title":"Do'kon"
+        }
+    ],
+    "techers":[
+        {
+            "id": 1,
+            "name": "Asadbek",
+            "surname": "Abdurakhmonov",
+            "age": 21,
+            "stack": "Full Stack developer",
+            "region": "Andijon",
+            "district": "Izboskan",
+            "status": "Head teacher",
+            "experience": "5+",
+            "gender": "male",
+            "email": "asadbekabdurakhmonov77@gmail.com",
+            "phone": "+998942360036",
+            "isMerried": false,
+            "study": "WEST Minister",
+            "workCompany": ["Google", "Facebook", "DeepSeek"]
+        }
+    ],
+    "stack": [
+        {
+            "id": "1",
+            "name": "Frontend"
+        },
+        {
+            "id": "2",
+            "name": "Backend"
+        },
+        {
+            "id": "3",
+            "name": "Full Stack"
+        },
+        {
+            "id": "4",
+            "name": "Graphic design"
+        },
+        {
+            "id": "5",
+            "name": "Flutter"
+        },
+        {
+            "id": "6",
+            "name": "Java"
+        },
+        {
+            "id": "7",
+            "name": "Foundation"
+        }
     ]
 }
