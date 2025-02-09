@@ -4,5 +4,8 @@ export const PATH = {
     Students:'/students',
     Market:'/market',
     Groups:'/groups',
-    Login:'/'
+    Login:'/',
+    TeachersAdd:'/teachers/add',
+    TeachersMore:'/teachers/:id',
+    TeachersEdit:'/teachers/:id/edit'
 }

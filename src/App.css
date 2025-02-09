@@ -28,7 +28,18 @@
 body{
   font-family: "Livvic",sans-serif;
   background-color: #f1f0ee;
+  overflow-y: hidden;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 a{
   font-family: "Livvic" , sans-serif;
 }

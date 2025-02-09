@@ -1,10 +1,11 @@
-import { LineOutlined, MoreOutlined, UserAddOutlined } from '@ant-design/icons'
-import { Button, Input } from 'antd'
-import React, { useEffect, useState } from 'react'
+import { UserAddOutlined } from '@ant-design/icons'
+import { Input } from 'antd'
+import React, { useState } from 'react'
 import Caption from '../../components/Caption'
-import FilterStack from '../../components/FilterStack'
+import {PATH} from '../../hooks/usePath'
 import CustomTable from '../../components/CustomTable'
-import {instance} from '../../hooks/instance' 
+import FilterCustom from '../../components/FilterCustom'
+import {getTeachers} from '../../services/getTeachers' 
 const Teachers = () => {
   const [stackId,setStackId] = useState(null)
   const [teachers,setTeachers] = useState([])
@@ -14,7 +15,7 @@ const Teachers = () => {
   const columns = [
     {
       title:'ID',
-      dataIndex:'id'
+      dataIndex:'key'
     },
     {
       title:'Ustoz ismi',
@@ -42,7 +43,7 @@ const Teachers = () => {
     },
   ]
 
-  const handleSearchByName = (e) => {
+  function handleSearchByName(e) {
     setIsLoading(true)
     const filterByName = teachers.filter(item => item.name.toLowerCase().includes(e.target.value.toLowerCase()))
     if (e.target.value) {
@@ -59,21 +60,11 @@ const Teachers = () => {
     }
   }
 
-  useEffect(() => {
-      instance().get('/techers').then(res => {
-        setTeachers(res.data.map((item,index) => {
-          item.key = index
-          item.name = item.name ? item.name : <LineOutlined/>
-          item.age = item.age ? item.age : <LineOutlined/>
-          item.stack = item.stack ? item.stack : <LineOutlined/>
-          item.action = <Button className='!w-[32px] !h-[32px]' size='middle' type='primary'><MoreOutlined className='rotate-90'/></Button>
-          return item
-        }))
-      })
-    },[refresh])
+  getTeachers(stackId,refresh,setTeachers)
+  
   return (
     <div className='p-5'>
-        <Caption title={'Ustozlar'} icon={<UserAddOutlined/>} count={5} />
+        <Caption addLink={PATH.TeachersAdd} title={'Ustozlar'} icon={<UserAddOutlined/>} count={5} />
         <div className='my-5 flex gap-10'>
             <label className='flex flex-col'>
               <span className='text-[15px] text-slate-400 pl-1 mb-1'>Qidirish</span>
@@ -81,7 +72,7 @@ const Teachers = () => {
             </label>
             <label className='flex flex-col'>
               <span className='text-[15px] text-slate-400 pl-1 mb-1'>Choose stack</span>
-              <FilterStack stackId={stackId} setStackId={setStackId} />
+              <FilterCustom API={"/stack"} placeholder={"stack tanlang"} filterId={stackId} setFilterId={setStackId} />
             </label>
         </div>
         <CustomTable isLoading={isLoading} columns={columns} data={teachers} />

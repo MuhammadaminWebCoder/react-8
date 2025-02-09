@@ -1,84 +1,262 @@
 {
-    "users":[
-        {
-            "userName":"Muhammadamin",
-            "password":"123"
-        }
-    ],
-    "categories":[
-        {
-            "id":1,
-            "path":"/",
-            "title":"Asosiy"
-        },
-        {
-            "id":2,
-            "path":"/teachers",
-            "title":"Ustozlar"
-        },
-        {
-            "id":3,
-            "path":"/students",
-            "title":"O'quvchilar"
-        },
-        {
-            "id":4,
-            "path":"/groups",
-            "title":"Guruxlar"
-        },
-        {
-            "id":5,
-            "path":"/market",
-            "title":"Do'kon"
-        }
-    ],
-    "techers":[
-        {
-            "id": 1,
-            "name": "Asadbek",
-            "surname": "Abdurakhmonov",
-            "age": 21,
-            "stack": "Full Stack developer",
-            "region": "Andijon",
-            "district": "Izboskan",
-            "status": "Head teacher",
-            "experience": "5+",
-            "gender": "male",
-            "email": "asadbekabdurakhmonov77@gmail.com",
-            "phone": "+998942360036",
-            "isMerried": false,
-            "study": "WEST Minister",
-            "workCompany": ["Google", "Facebook", "DeepSeek"]
-        }
-    ],
-    "stack": [
-        {
-            "id": "1",
-            "name": "Frontend"
-        },
-        {
-            "id": "2",
-            "name": "Backend"
-        },
-        {
-            "id": "3",
-            "name": "Full Stack"
-        },
-        {
-            "id": "4",
-            "name": "Graphic design"
-        },
-        {
-            "id": "5",
-            "name": "Flutter"
-        },
-        {
-            "id": "6",
-            "name": "Java"
-        },
-        {
-            "id": "7",
-            "name": "Foundation"
-        }
-    ]
+  "users": [
+    {
+      "userName": "Muhammadamin",
+      "password": "123",
+      "id": "1223"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "path": "/",
+      "title": "Asosiy"
+    },
+    {
+      "id": "2",
+      "path": "/teachers",
+      "title": "Ustozlar"
+    },
+    {
+      "id": "3",
+      "path": "/students",
+      "title": "O'quvchilar"
+    },
+    {
+      "id": "4",
+      "path": "/groups",
+      "title": "Guruxlar"
+    },
+    {
+      "id": "5",
+      "path": "/market",
+      "title": "Do'kon"
+    }
+  ],
+  "techers": [
+    {
+      "id": "1",
+      "name": "Asadbek",
+      "surname": "Abdurakhmonov",
+      "age": 21,
+      "stack": "Frontend devloper",
+      "stackId": "1",
+      "region": "Andijon",
+      "regionId": "3",
+      "district": "Izboskan",
+      "status": "Head teacher",
+      "statusId": "2",
+      "experience": "5+",
+      "gender": "male",
+      "email": "asadbekabdurakhmonov77@gmail.com",
+      "phone": "+998942360036",
+      "isMerried": false,
+      "study": "WEST Minister",
+      "workCompany": [
+        "Apple",
+        "Najot Ta'lim"
+      ],
+      "workCompanyId": [
+        7,
+        9
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Nurulloh",
+      "surname": "Suyunboyev",
+      "age": 24,
+      "stack": "Graphic design",
+      "stackId": "4",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "sham",
+      "status": "Head teacher",
+      "statusId": "2",
+      "experience": "5+",
+      "gender": "male",
+      "email": "nurulloh21@gmail.com",
+      "phone": "+99894236211111136",
+      "isMerried": false,
+      "study": "WEST enginer",
+      "workCompany": [
+        "Google",
+        "TokTok"
+      ],
+      "workCompanyId": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "28ae",
+      "name": "Muhammadamin",
+      "sourname": "Nuriddinov",
+      "age": "21",
+      "stackId": "1",
+      "stack": "Frontend",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "shayxontoxur",
+      "status": null,
+      "statusId": null,
+      "experience": "12",
+      "gender": "Erkak",
+      "email": "Muhammadamin3x@gmail.com",
+      "phone": "+998 33 122 12 12",
+      "isMerried": "yoq",
+      "workCompany": [
+        "Apple",
+        "Tesla",
+        "Telegram",
+        "OpenAi"
+      ],
+      "workCompanyId": [
+        "7",
+        "6",
+        "5",
+        "4"
+      ]
+    }
+  ],
+  "stack": [
+    {
+      "id": "1",
+      "name": "Frontend"
+    },
+    {
+      "id": "2",
+      "name": "Backend"
+    },
+    {
+      "id": "3",
+      "name": "Full Stack"
+    },
+    {
+      "id": "4",
+      "name": "Graphic design"
+    },
+    {
+      "id": "5",
+      "name": "Flutter"
+    },
+    {
+      "id": "6",
+      "name": "Java"
+    },
+    {
+      "id": "7",
+      "name": "Foundation"
+    }
+  ],
+  "region": [
+    {
+      "id": "1",
+      "name": "Toshkent"
+    },
+    {
+      "id": "2",
+      "name": "Fargona"
+    },
+    {
+      "id": "3",
+      "name": "Namangan"
+    },
+    {
+      "id": "4",
+      "name": "Andijon"
+    },
+    {
+      "id": "5",
+      "name": "Sirdaryo"
+    },
+    {
+      "id": "6",
+      "name": "Jizzax"
+    },
+    {
+      "id": "7",
+      "name": "Samarqand"
+    },
+    {
+      "id": "8",
+      "name": "Qashqadaryo"
+    },
+    {
+      "id": "9",
+      "name": "Surxoandaryo"
+    },
+    {
+      "id": "10",
+      "name": "Buxoro"
+    },
+    {
+      "id": "11",
+      "name": "Xorazm"
+    },
+    {
+      "id": "12",
+      "name": "Navoiy"
+    }
+  ],
+  "status": [
+    {
+      "id": "1",
+      "name": "Yordamchi ustoz"
+    },
+    {
+      "id": "2",
+      "name": "Asosiy ustoz"
+    },
+    {
+      "id": "3",
+      "name": "Bosh ustoz"
+    },
+    {
+      "id": "4",
+      "name": "Boshqaruvchi ustoz"
+    }
+  ],
+  "workList": [
+    {
+      "id": "1",
+      "name": "Google"
+    },
+    {
+      "id": "2",
+      "name": "Facebook"
+    },
+    {
+      "id": "3",
+      "name": "TikTok"
+    },
+    {
+      "id": "4",
+      "name": "OpenAi"
+    },
+    {
+      "id": "5",
+      "name": "Telegram"
+    },
+    {
+      "id": "6",
+      "name": "Tesla"
+    },
+    {
+      "id": "7",
+      "name": "Apple"
+    },
+    {
+      "id": "8",
+      "name": "Microsoft"
+    },
+    {
+      "id": "9",
+      "name": "Najot Ta'lim"
+    },
+    {
+      "id": "10",
+      "name": "Kahoot"
+    }
+  ]
 }
