@@ -4,7 +4,6 @@ import getRequest from '../services/getRequest'
 const FilterStack = ({extraclass,setFilterId,filterId,API,placeholder,mode,setFilterName}) => {
       const data = getRequest(API)
       const options = data.map(item => ({label:item.name,value:item.id}))
-      console.log(options);
     
     const onChange = (value,data) => {
       setFilterId(value)
@@ -17,7 +16,7 @@ const FilterStack = ({extraclass,setFilterId,filterId,API,placeholder,mode,setFi
         }
       }
     }
-
+    
     return (
     <Select 
         mode={mode}

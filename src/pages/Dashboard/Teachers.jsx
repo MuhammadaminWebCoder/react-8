@@ -64,7 +64,7 @@ const Teachers = () => {
   
   return (
     <div className='p-5'>
-        <Caption addLink={PATH.TeachersAdd} title={'Ustozlar'} icon={<UserAddOutlined/>} count={5} />
+        <Caption addLink={PATH.TeachersAdd} title={'Ustozlar'} icon={<UserAddOutlined/>} count={teachers.length} />
         <div className='my-5 flex gap-10'>
             <label className='flex flex-col'>
               <span className='text-[15px] text-slate-400 pl-1 mb-1'>Qidirish</span>

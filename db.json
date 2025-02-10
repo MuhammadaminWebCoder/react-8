@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "userName": "Muhammadamin",
-      "password": "123",
-      "id": "1223"
+      "username": "Nurillo",
+      "password": "nurillo123",
+      "id": "2c74"
     }
   ],
   "categories": [
@@ -24,132 +24,180 @@
     },
     {
       "id": "4",
-      "path": "/groups",
-      "title": "Guruxlar"
+      "path": "/market",
+      "title": "Dokon"
     },
     {
       "id": "5",
-      "path": "/market",
-      "title": "Do'kon"
+      "path": "/groups",
+      "title": "Guruxlar"
     }
   ],
   "techers": [
     {
-      "id": "1",
-      "name": "Asadbek",
-      "surname": "Abdurakhmonov",
-      "age": 21,
-      "stack": "Frontend devloper",
+      "name": "Nurilloddd",
+      "sourname": "Suyunboyev",
+      "age": 41,
       "stackId": "1",
-      "region": "Andijon",
+      "stack": "Frontend developer",
+      "region": "Namangan",
       "regionId": "3",
-      "district": "Izboskan",
-      "status": "Head teacher",
+      "district": "Norin",
+      "status": "Asosiy teacher",
       "statusId": "2",
-      "experience": "5+",
-      "gender": "male",
-      "email": "asadbekabdurakhmonov77@gmail.com",
-      "phone": "+998942360036",
-      "isMerried": false,
-      "study": "WEST Minister",
-      "workCompany": [
-        "Apple",
-        "Najot Ta'lim"
-      ],
-      "workCompanyId": [
-        7,
-        9
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Nurulloh",
-      "surname": "Suyunboyev",
-      "age": 24,
-      "stack": "Graphic design",
-      "stackId": "4",
-      "region": "Toshkent",
-      "regionId": "1",
-      "district": "sham",
-      "status": "Head teacher",
-      "statusId": "2",
-      "experience": "5+",
-      "gender": "male",
-      "email": "nurulloh21@gmail.com",
-      "phone": "+99894236211111136",
-      "isMerried": false,
-      "study": "WEST enginer",
-      "workCompany": [
-        "Google",
-        "TokTok"
-      ],
-      "workCompanyId": [
-        1,
-        3
-      ]
-    },
-    {
-      "id": "28ae",
-      "name": "Muhammadamin",
-      "sourname": "Nuriddinov",
-      "age": "21",
-      "stackId": "1",
-      "stack": "Frontend",
-      "region": "Toshkent",
-      "regionId": "1",
-      "district": "shayxontoxur",
-      "status": null,
-      "statusId": null,
-      "experience": "12",
+      "experience": "2 yil",
       "gender": "Erkak",
-      "email": "Muhammadamin3x@gmail.com",
-      "phone": "+998 33 122 12 12",
-      "isMerried": "yoq",
+      "email": "nurillosuyunboyev6@gmail.com",
+      "study": "National Universiy",
+      "phone": "+998994683600",
+      "isMerried": "Bo'ydoq",
       "workCompany": [
-        "Apple",
-        "Tesla",
-        "Telegram",
-        "OpenAi"
+        "TikTok",
+        "Facebook",
+        "Google"
       ],
       "workCompanyId": [
-        "7",
+        "3",
+        "2",
+        "1"
+      ],
+      "id": "1"
+    },
+    {
+      "name": "Valijon",
+      "surname": "Quvondiqov",
+      "age": "17",
+      "stackId": "2",
+      "stack": "Backend",
+      "region": "Jizzax",
+      "regionId": "6",
+      "district": "Kosmanavtlar",
+      "status": "Bosh ustoz",
+      "statusId": "3",
+      "experience": "1",
+      "gender": "Erkak",
+      "email": "valijon@gmail.com",
+      "phone": "+998991231212",
+      "isMerried": "Yoq ",
+      "study": "TATU",
+      "workCompany": [
+        "Microsoft",
+        "Tesla",
+        "OpenAI"
+      ],
+      "workCompanyId": [
+        "8",
         "6",
-        "5",
         "4"
+      ],
+      "id": "bc99"
+    },
+    {
+      "id": "f2b9",
+      "name": "Hondamir",
+      "surname": "Usmonov",
+      "age": "21",
+      "stackId": "2",
+      "stack": "Backend",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Olmazor tumani",
+      "status": "Asosiy ustoz",
+      "statusId": "2",
+      "experience": "2 yil",
+      "gender": "Erkak",
+      "email": "hondamir@gmail.com",
+      "phone": "+998904445566",
+      "isMerried": "Yo'q",
+      "study": "MDIS",
+      "workCompany": [
+        "OpenAI",
+        "TikTok",
+        "Facebook"
+      ],
+      "workCompanyId": [
+        "4",
+        "3",
+        "2"
       ]
     }
   ],
   "stack": [
     {
       "id": "1",
-      "name": "Frontend"
+      "name": "Frontend",
+      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg"
     },
     {
       "id": "2",
-      "name": "Backend"
+      "name": "Backend",
+      "image": "https://media.gettyimages.com/id/1422276740/vector/software-developer-flat-design.jpg?s=612x612&w=gi&k=20&c=nAeiHldWvLHV-S4CRv5BsRtwH2PlS7t7Dynol9npglE="
     },
     {
       "id": "3",
-      "name": "Full Stack"
+      "name": "Full Stack",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
     },
     {
       "id": "4",
-      "name": "Graphic design"
+      "name": "Graphic design",
+      "image": "https://inspiria.edu.in/wp-content/uploads/Career-in.-graphic-designers.webp"
     },
     {
       "id": "5",
-      "name": "Flutter"
+      "name": "Flutter",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzpEkv-vlwrVppb-PQuWArI1sXR9vAYAwNg&s"
     },
     {
       "id": "6",
-      "name": "Java"
+      "name": "Java",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyYYAhEoXWOcyx0sjHiaK2TrmUNxxMJdE6g&s"
     },
     {
       "id": "7",
-      "name": "Foundation"
+      "name": "Foundation",
+      "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
     }
   ],
-  "region": [
+  "groups": [
+    {
+      "id": "1",
+      "stackId": "1",
+      "name": "React JS N77",
+      "createdAt": "03.08.2024",
+      "studentCount": "8",
+      "status": true,
+      "mainTeacher": "Nurillo Suyunboyev",
+      "teacherId": "1",
+      "supportTeacher": "Isroil Omonjonov",
+      "room": "Facebook"
+    },
+    {
+      "id": "2",
+      "stackId": "2",
+      "name": "Backend NodeJS N76",
+      "createdAt": "03.08.2024",
+      "studentCount": "18",
+      "status": false,
+      "mainTeacher": "Valijon Quvondiqov",
+      "teacherId": "bc99",
+      "supportTeacher": "Isroil Omonjonov",
+      "room": "Tesla"
+    },
+    {
+      "id": "3",
+      "stackId": "2",
+      "name": "Backend Java N2",
+      "createdAt": "01.02.2024",
+      "studentCount": "20",
+      "status": true,
+      "mainTeacher": "Hondamir Usmonov",
+      "teacherId": "f2b9",
+      "supportTeacher": "Ibrohimjon Sadriddinov",
+      "room": "Instagram"
+    }
+  ],
+  "regions": [
     {
       "id": "1",
       "name": "Toshkent"
@@ -184,7 +232,7 @@
     },
     {
       "id": "9",
-      "name": "Surxoandaryo"
+      "name": "Surxandaryo"
     },
     {
       "id": "10",
@@ -196,7 +244,7 @@
     },
     {
       "id": "12",
-      "name": "Navoiy"
+      "name": "Navoi"
     }
   ],
   "status": [
@@ -232,7 +280,7 @@
     },
     {
       "id": "4",
-      "name": "OpenAi"
+      "name": "OpenAI"
     },
     {
       "id": "5",

@@ -3,7 +3,7 @@ import { Button } from 'antd'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const CrudCaption = ({title,isLoading}) => {
+const CrudCaption = ({title,isLoading,id}) => {
     const navigate = useNavigate()
     return (
     <div className='flex items-center justify-between'>
@@ -11,7 +11,7 @@ const CrudCaption = ({title,isLoading}) => {
         <button className='cursor-pointer' type='button' onClick={() => navigate(-1)}> <ArrowLeftOutlined className='text-[25px]' /></button>
         <h2 className='font-bold text-[25px]'>{title}</h2>
     </div>
-    <Button loading={isLoading} htmlType='submit' icon={<PlusCircleOutlined/>} type='primary' size='large'>Qo'shish</Button>
+    <Button loading={isLoading} htmlType='submit' icon={<PlusCircleOutlined/>} type='primary' size='large'>{id?'taxrirlash':"Qo'shish"}</Button>
   </div>
   )
 }
