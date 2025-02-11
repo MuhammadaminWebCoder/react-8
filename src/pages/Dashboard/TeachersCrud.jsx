@@ -5,7 +5,7 @@ import FilterCustom from '../../components/FilterCustom'
 import {Create,Edit} from '../../services/auth'
 import { useNavigate, useParams } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
-import getRequest from '../../services/getRequest'
+import getRequest from '../../services/getRequest'  
 const TeachersCrud = () => {
 
   const {id} = useParams()
@@ -90,7 +90,7 @@ const TeachersCrud = () => {
             <FilterCustom extraclass={`!w-[100%]`} API={"/status"} setFilterId={setStatusId} filterId={status} setFilterName={setStatus} placeholder={'Lavozim tanlang'}/>
             <Select value={gender} onChange={ (value) => setGender(value)} extraclass={'w-full'} size='large' placeholder={'Jins tanlang'} options={[{label:"Erkak",value:"Erkak"},{label:"Ayol",value:"Ayol"}]} />
             <Input value={isMerried} onChange={(e) => setIsMerried(e.target.value)} allowClear required size='large' placeholder='Turmush qurganmsz' />
-            <FilterCustom API={"/workList"} extraclass={'w-full'} filterId={workCompany} placeholder={'Ish joyingizni tanlang'} mode={"multiple"} setFilterId={setWorkCompanyId} setFilterName={setWorkCompany}/>
+            <FilterCustom API={"/workList"} extraclass={'w-full'} filterId={workCompanyId} placeholder={'Ish joyingizni tanlang'} mode={"multiple"} setFilterId={setWorkCompanyId} setFilterName={setWorkCompany}/>
           </div>
       </div>
     </form>

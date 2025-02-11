@@ -19,15 +19,11 @@ const Group = () => {
       dataIndex:'name'
     },
     {
-      title:"O'quvchilar soni",
-      dataIndex:'studentCount'
-    },
-    {
       title:"Asosoy Ustoz",
       dataIndex:'mainTeacher'
     },
     {
-      title:'Ustoz lavozimi',
+      title:'Yordamchi Ustoz',
       dataIndex:'supportTeacher'
     },
     {
@@ -72,9 +68,11 @@ const Group = () => {
     const [refresh,setRefresh] = useState(false)
     getGroups(stackId,refresh,setGroups)
     const [teacherId ,setTeacherId] = useState(null)
+    console.log(groups);
+    
   return (
     <div className='p-5'>
-      <Caption isBack={true} title={name} count={5} icon={<GroupOutlined/>} />
+      <Caption addLink={'add'} isBack={true} title={name} count={groups.length} icon={<GroupOutlined/>} />
       <div className="my-5 flex gap-5">
         <Input onChange={handleSearchByName} className='!w-[350px]' size='large' placeholder='Qidirish...' allowClear />
         <FilterCustom API={`/techers?stackId=${stackId}`} filterId={teacherId} setFilterId={setTeacherId} placeholder={'ustoz boyicha saralash'} />

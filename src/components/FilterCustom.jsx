@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import getRequest from '../services/getRequest'
 const FilterStack = ({extraclass,setFilterId,filterId,API,placeholder,mode,setFilterName}) => {
       const data = getRequest(API)
-      const options = data.map(item => ({label:item.name,value:item.id}))
+      const options = data.map((item,ind) => ({key:ind, label:item.name,value:item.id}))
     
     const onChange = (value,data) => {
       setFilterId(value)

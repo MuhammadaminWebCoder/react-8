@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { instance } from "../hooks/instance";
 import { useEffect } from 'react';
 import { LineOutlined, MoreOutlined } from "@ant-design/icons";
 import { Button } from "antd";
-
+  import { useNavigate } from 'react-router-dom';
 export const getGroups = (stackId, refresh, setGroups,teacherId) => {
-
+  const navigate = useNavigate()
   useEffect(() => {
     instance().get(`/groups?stackId=${stackId}`, {
       params: { teacherId }
@@ -14,8 +14,7 @@ export const getGroups = (stackId, refresh, setGroups,teacherId) => {
         item.key = index + 1;
         item.name = item.name ? item.name : <LineOutlined />;
         item.status = item.status ? 'Active': 'active emas'
-        item.studentCount = item.studentCount ? `${item.studentCount} ta`:'0 ta'
-        item.action = <Button   className="!w-[32px] !h-[32px]" type='primary'><MoreOutlined className='rotate-90' /></Button>
+        item.action = <Button onClick={()=> navigate(`${item.id}`)}  className="!w-[32px] !h-[32px]" type='primary'><MoreOutlined className='rotate-90' /></Button>
         return item;
       }));
     });

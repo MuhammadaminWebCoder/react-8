@@ -35,91 +35,35 @@
   ],
   "techers": [
     {
-      "name": "Nurilloddd",
-      "sourname": "Suyunboyev",
-      "age": 41,
-      "stackId": "1",
-      "stack": "Frontend developer",
-      "region": "Namangan",
-      "regionId": "3",
-      "district": "Norin",
-      "status": "Asosiy teacher",
-      "statusId": "2",
-      "experience": "2 yil",
+      "name": "test",
+      "sourname": "dwd",
+      "age": "22",
+      "stackId": "2",
+      "stack": "Backend",
+      "region": "Samarqand",
+      "regionId": "7",
+      "district": "dwdw",
+      "status": "Bosh ustoz",
+      "statusId": "3",
+      "experience": "ew",
       "gender": "Erkak",
-      "email": "nurillosuyunboyev6@gmail.com",
-      "study": "National Universiy",
-      "phone": "+998994683600",
-      "isMerried": "Bo'ydoq",
+      "email": "dwdw@dw.dwdwd",
+      "study": "wddw",
+      "phone": "+998",
+      "isMerried": "wdwdw",
       "workCompany": [
+        "OpenAI",
         "TikTok",
         "Facebook",
         "Google"
       ],
       "workCompanyId": [
+        "4",
         "3",
         "2",
         "1"
       ],
-      "id": "1"
-    },
-    {
-      "name": "Valijon",
-      "surname": "Quvondiqov",
-      "age": "17",
-      "stackId": "2",
-      "stack": "Backend",
-      "region": "Jizzax",
-      "regionId": "6",
-      "district": "Kosmanavtlar",
-      "status": "Bosh ustoz",
-      "statusId": "3",
-      "experience": "1",
-      "gender": "Erkak",
-      "email": "valijon@gmail.com",
-      "phone": "+998991231212",
-      "isMerried": "Yoq ",
-      "study": "TATU",
-      "workCompany": [
-        "Microsoft",
-        "Tesla",
-        "OpenAI"
-      ],
-      "workCompanyId": [
-        "8",
-        "6",
-        "4"
-      ],
-      "id": "bc99"
-    },
-    {
-      "id": "f2b9",
-      "name": "Hondamir",
-      "surname": "Usmonov",
-      "age": "21",
-      "stackId": "2",
-      "stack": "Backend",
-      "region": "Toshkent",
-      "regionId": "1",
-      "district": "Olmazor tumani",
-      "status": "Asosiy ustoz",
-      "statusId": "2",
-      "experience": "2 yil",
-      "gender": "Erkak",
-      "email": "hondamir@gmail.com",
-      "phone": "+998904445566",
-      "isMerried": "Yo'q",
-      "study": "MDIS",
-      "workCompany": [
-        "OpenAI",
-        "TikTok",
-        "Facebook"
-      ],
-      "workCompanyId": [
-        "4",
-        "3",
-        "2"
-      ]
+      "id": "c472"
     }
   ],
   "stack": [
@@ -161,40 +105,63 @@
   ],
   "groups": [
     {
-      "id": "1",
       "stackId": "1",
       "name": "React JS N77",
-      "createdAt": "03.08.2024",
-      "studentCount": "8",
-      "status": true,
+      "roomId": "2",
       "mainTeacher": "Nurillo Suyunboyev",
       "teacherId": "1",
+      "room": "Tesla",
+      "status": true,
+      "createdAt": "03.08.2024",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Facebook"
+      "id": "1"
     },
     {
       "id": "2",
       "stackId": "2",
       "name": "Backend NodeJS N76",
       "createdAt": "03.08.2024",
-      "studentCount": "18",
       "status": false,
       "mainTeacher": "Valijon Quvondiqov",
       "teacherId": "bc99",
       "supportTeacher": "Isroil Omonjonov",
-      "room": "Tesla"
+      "room": "Tesla",
+      "roomId": "2"
     },
     {
       "id": "3",
       "stackId": "2",
       "name": "Backend Java N2",
       "createdAt": "01.02.2024",
-      "studentCount": "20",
       "status": true,
       "mainTeacher": "Hondamir Usmonov",
       "teacherId": "f2b9",
       "supportTeacher": "Ibrohimjon Sadriddinov",
-      "room": "Instagram"
+      "room": "Instagram",
+      "roomId": "3"
+    },
+    {
+      "id": "01d3",
+      "stackId": "1",
+      "name": "N82",
+      "mainTeacher": "Nurilloddd",
+      "teacherId": "1",
+      "room": "Facebook",
+      "status": true,
+      "createdAt": "2025-02-10",
+      "supportTeacher": "Muhammadamin"
+    },
+    {
+      "id": "2a75",
+      "stackId": "2",
+      "name": "n11",
+      "roomId": "4",
+      "mainTeacher": "test",
+      "teacherId": "c472",
+      "room": "Osmondagi bolalar",
+      "status": true,
+      "createdAt": "2025-02-11",
+      "supportTeacher": "das"
     }
   ],
   "regions": [
@@ -305,6 +272,58 @@
     {
       "id": "10",
       "name": "Kahoot"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "studentId": "18295",
+      "name": "Eldor",
+      "surname": "Xudoyiberganov",
+      "guroupId": "2",
+      "stackId": "1",
+      "age": "16",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Olmazor tumani",
+      "study": "33 - maktab",
+      "status": true,
+      "phone": "+998904445566",
+      "email": "eldor@gmail.com"
+    },
+    {
+      "id": "2",
+      "studentId": "27771",
+      "name": "Temur",
+      "surname": "Tolibov",
+      "guroupId": "2",
+      "stackId": "2",
+      "age": "28",
+      "region": "Fargona",
+      "regionId": "2",
+      "district": "Fargona Shahar",
+      "study": "Islamic academy",
+      "status": true,
+      "phone": "+998904445566",
+      "email": "temur@gmail.com"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Facebook"
+    },
+    {
+      "id": "2",
+      "name": "Tesla"
+    },
+    {
+      "id": "3",
+      "name": "Instagram"
+    },
+    {
+      "id": "4",
+      "name": "Osmondagi bolalar"
     }
   ]
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import {PATH} from '../hooks/usePath'
-import {Home,Market,TeachersMore,TeachersCrud, Teachers,Students} from '../pages/Dashboard'
+import {Home,Market,TeachersMore,TeachersCrud, Teachers,Students, GroupCrud, SingleGroup} from '../pages/Dashboard'
 import Stack from '../pages/Dashboard/stack/Stack'
 import Group from '../pages/Dashboard/group/Group'
 import { CodeSandboxOutlined, HomeOutlined, ShoppingCartOutlined, UsergroupAddOutlined, UserOutlined } from '@ant-design/icons'
@@ -87,5 +87,20 @@ export const dashboardRouteList = [
         id:9,
         path:PATH.Group,
         element:<Group/>,
+    },
+    {
+        id:10,
+        path:PATH.GroupAdd,
+        element:<GroupCrud/>,
+    },
+    {
+        id:11,
+        path:PATH.GroupEdit,
+        element:<GroupCrud/>,
+    },
+    {
+        id:12,
+        path:PATH.GroupMore,
+        element:<SingleGroup/>,
     }
 ]

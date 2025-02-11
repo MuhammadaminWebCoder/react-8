@@ -16,7 +16,7 @@ const TeachersMore = () => {
 
     const handleDeleteTeacher = () => {
         setDeleteLoading(true)
-        deleteUser(`/techers/${id}`,setDeleteLoading,setDeleteModal,navigate,toast)
+        deleteUser(`/techers/${id}`,setDeleteLoading,navigate, setDeleteModal,toast)
     }
   return (
     <div className='p-5'>
