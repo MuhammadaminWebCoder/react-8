@@ -1,8 +1,8 @@
 import { Select } from 'antd'
 import React, { useEffect } from 'react'
 import getRequest from '../services/getRequest'
-const FilterStack = ({extraclass,setFilterId,filterId,API,placeholder,mode,setFilterName}) => {
-      const data = getRequest(API)
+const FilterStack = ({extraclass,setFilterId,filterId,API,placeholder,mode,setFilterName,changeId}) => {
+      const data = getRequest(API,changeId)
       const options = data.map((item,ind) => ({key:ind, label:item.name,value:item.id}))
     
     const onChange = (value,data) => {

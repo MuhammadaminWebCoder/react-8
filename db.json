@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "username": "Nurillo",
-      "password": "nurillo123",
+      "username": "Muhammadamin",
+      "password": "123",
       "id": "2c74"
     }
   ],
@@ -68,9 +68,9 @@
   ],
   "stack": [
     {
-      "id": "1",
-      "name": "Frontend",
-      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg"
+      "name": "Fron-tend",
+      "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg",
+      "id": "1"
     },
     {
       "id": "2",
@@ -101,6 +101,11 @@
       "id": "7",
       "name": "Foundation",
       "image": "https://www.champstreet.com/blog/wp-content/uploads/2018/11/foundation-course.jpg"
+    },
+    {
+      "id": "0bad",
+      "name": "SMM",
+      "image": "https://neiros.ru/images/ac6e9442a45261796bb238ef95aebcb9.png"
     }
   ],
   "groups": [
@@ -281,6 +286,7 @@
       "name": "Eldor",
       "surname": "Xudoyiberganov",
       "guroupId": "2",
+      "group":"React JS N77",
       "stackId": "1",
       "age": "16",
       "region": "Toshkent",
@@ -297,6 +303,7 @@
       "name": "Temur",
       "surname": "Tolibov",
       "guroupId": "2",
+      "group":"Backend NodeJS N72",
       "stackId": "2",
       "age": "28",
       "region": "Fargona",

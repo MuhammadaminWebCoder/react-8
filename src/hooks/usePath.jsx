@@ -2,14 +2,19 @@ export const PATH = {
     Home:'/',
     Teachers:'/teachers',
     Students:'/students',
+    StudentsAdd:'/students/add',
+    StudentsMore:'/students/:id',
+    StudentsEdit:'/students/:id/edit',
     Market:'/market',
     Stack:'/stack',
+    StackAdd:'/stack/add',
+    StackEdit:'/stack/edit/:stackId',
     Group:'/stack/:stackId',
     GroupAdd:'/stack/:stackId/add',
     GroupMore:'/stack/:stackId/:groupId',
     GroupEdit:'/stack/:stackId/:groupId/edit',
-    Login:'/',
     TeachersAdd:'/teachers/add',
     TeachersMore:'/teachers/:id',
-    TeachersEdit:'/teachers/:id/edit'
+    TeachersEdit:'/teachers/:id/edit',
+    Login:'/'
 }

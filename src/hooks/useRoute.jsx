@@ -1,9 +1,10 @@
 import React from 'react'
 import {PATH} from '../hooks/usePath'
-import {Home,Market,TeachersMore,TeachersCrud, Teachers,Students, GroupCrud, SingleGroup} from '../pages/Dashboard'
+import {Home,Market,TeachersMore,TeachersCrud, Teachers,Students, GroupCrud, SingleGroup, StudentsCrud, StudentsMore} from '../pages/Dashboard'
 import Stack from '../pages/Dashboard/stack/Stack'
 import Group from '../pages/Dashboard/group/Group'
 import { CodeSandboxOutlined, HomeOutlined, ShoppingCartOutlined, UsergroupAddOutlined, UserOutlined } from '@ant-design/icons'
+import StackCrud from '../pages/Dashboard/stack/StackCrud'
 
 export const dashboardNavList = [
         {
@@ -102,5 +103,30 @@ export const dashboardRouteList = [
         id:12,
         path:PATH.GroupMore,
         element:<SingleGroup/>,
+    },
+    {
+        id:13,
+        path:PATH.StackAdd,
+        element:<StackCrud/>,
+    },
+    {
+        id:14,
+        path:PATH.StackEdit,
+        element:<StackCrud/>,
+    },
+    {
+        id:15,
+        path:PATH.StudentsAdd,
+        element:<StudentsCrud/>,
+    },
+    {
+        id:16,
+        path:PATH.StudentsEdit,
+        element:<StudentsCrud/>,
+    },
+    {
+        id:17,
+        path:PATH.StudentsMore,
+        element:<StudentsMore/>,
     }
 ]

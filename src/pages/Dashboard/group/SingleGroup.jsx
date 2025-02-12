@@ -1,55 +1,20 @@
-import { ArrowLeftOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons'
+import { ArrowLeftOutlined, DeleteOutlined, EditOutlined, UserAddOutlined } from '@ant-design/icons'
 import React, { useState } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import getRequest from '../../../services/getRequest'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Modal } from 'antd'
 import { instance } from '../../../hooks/instance'
-import CustomTable from '../../../components/CustomTable'
-import { getStudents } from '../../../services/getStudents'
+import StudentDash from '../../../components/StudentDash'
 import {deleteUser} from '../../../services/Delete'
 
 const singleGroup = () => {
   const navigate = useNavigate()
   const {groupId} = useParams()
-  const [refresh,setRefresh] = useState(false)
   const [deleteLoading,setDeleteLoading] = useState(false)
   const [deleteModal,setDeleteModal] = useState(false)
   const singleData = getRequest(`/groups/${groupId}`)
-  const [students,setStudents] = useState([])
-  const [tableLoading,setTableLoading] = useState(false)
-
-  const columns = [
-    {
-      title:'ID',
-      dataIndex:'key'
-    },
-    {
-      title:'Ismi',
-      dataIndex:'name'
-    },
-    {
-      title:'Familiya',
-      dataIndex:'surname'
-    },
-    {
-      title:'Yoshi',
-      dataIndex:'age'
-    },
-    {
-      title:'Telefon raqami',
-      dataIndex:'phone'
-    },
-    {
-      title:'Holati',
-      dataIndex:'status'
-    },
-    {
-      title:'Batafsil',
-      dataIndex:'action'
-    }
-  ]
-
+  
 
   const handleDeleteGroup = () => {
     setDeleteLoading(true)
@@ -70,7 +35,6 @@ const singleGroup = () => {
     })
 }
 
-getStudents(groupId,refresh,setStudents)
   return (
     <div className='p-5'>
       <div className="flex items-center justify-between">
@@ -81,14 +45,12 @@ getStudents(groupId,refresh,setStudents)
         </div>
         <div className="flex items-center gap-3">
             <Button onClick={() => setDeleteModal(true)} className='!bg-red-600 !text-white' size='large'><DeleteOutlined className='text-[22px]' /></Button>
-            <Button onClick={() => navigate(`edit`)} type='primary' size='large' icon={<EditOutlined className='text-[20px]'/>}>Tahrirlash</Button>
+            <Button onClick={() => navigate(`edit`)} type='primary' size='large' icon={<EditOutlined className='text-[20px]'/>}>Gurux tahrirlash</Button>
         </div>
         <Modal confirmLoading={deleteLoading} open={deleteModal} onCancel={()=> setDeleteModal(false)} onOk={handleDeleteGroup} title="Guruxni o'chirish">
         </Modal>
       </div>
-        <div className="py-10">fill</div>
-      <CustomTable isLoading={tableLoading} columns={columns} data={students} />
-
+        <StudentDash groupId={groupId} />
     </div>
   )
 }
