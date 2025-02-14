@@ -6,7 +6,7 @@ import { PATH } from '../../../hooks/usePath'
 const Students = () => {
   return (
     <div className='p-5'>
-      <Caption addLink={PATH.StudentsAdd} title={"O'qituvchi"}  icon={<UsergroupAddOutlined/>} count={10} />
+      <Caption addLink={PATH.StudentsAdd} title={"O'quvchilar"}  icon={<UsergroupAddOutlined/>} count={10} />
       <StudentDash groupId={null} removeAddBtn={true} />
     </div>
   )

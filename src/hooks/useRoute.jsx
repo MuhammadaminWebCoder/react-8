@@ -1,9 +1,9 @@
 import React from 'react'
 import {PATH} from '../hooks/usePath'
-import {Home,Market,TeachersMore,TeachersCrud, Teachers,Students, GroupCrud, SingleGroup, StudentsCrud, StudentsMore} from '../pages/Dashboard'
+import {Home,TeachersMore,TeachersCrud, Teachers,Students, GroupCrud, SingleGroup, StudentsCrud, StudentsMore} from '../pages/Dashboard'
 import Stack from '../pages/Dashboard/stack/Stack'
 import Group from '../pages/Dashboard/group/Group'
-import { CodeSandboxOutlined, HomeOutlined, ShoppingCartOutlined, UsergroupAddOutlined, UserOutlined } from '@ant-design/icons'
+import { CodeSandboxOutlined, HomeOutlined, UsergroupAddOutlined, UserOutlined } from '@ant-design/icons'
 import StackCrud from '../pages/Dashboard/stack/StackCrud'
 
 export const dashboardNavList = [
@@ -34,14 +34,7 @@ export const dashboardNavList = [
             element:<Stack/>,
             title:'Guruxlar',
             icon:<CodeSandboxOutlined className='!text-[22px]'/>
-        },
-        {
-            id:5,
-            path:PATH.Market,
-            element:<Market/>,
-            title:`Do'kon`,
-            icon:<ShoppingCartOutlined className='!text-[22px]'/>
-        },
+        }
     ]
 export const dashboardRouteList = [
     {
@@ -63,11 +56,6 @@ export const dashboardRouteList = [
         id:4,
         path:PATH.Stack,
         element:<Stack/>,
-    },
-    {
-        id:5,
-        path:PATH.Market,
-        element:<Market/>,
     },
     {
         id:6,

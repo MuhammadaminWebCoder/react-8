@@ -1,6 +1,5 @@
 import Home from '../Dashboard/Home'
 import Stack from '../Dashboard/stack/Stack'
-import Market from '../Dashboard/Market'
 import Students from '../Dashboard/Students/Students'
 import StudentsCrud from '../Dashboard/Students/StudentsCrud'
 import StudentsMore from '../Dashboard/Students/StudentsMore'
@@ -11,4 +10,4 @@ import Group from '../Dashboard/group/Group'
 import GroupCrud from './group/GroupCrud'
 import SingleGroup from './group/SingleGroup'
 
-export {Home,Stack,Market,Students,Teachers,TeachersCrud,TeachersMore,Group,GroupCrud,SingleGroup,StudentsCrud,StudentsMore}
+export {Home,Stack,Students,Teachers,TeachersCrud,TeachersMore,Group,GroupCrud,SingleGroup,StudentsCrud,StudentsMore}

@@ -23,11 +23,6 @@
       "title": "O'quvchilar"
     },
     {
-      "id": "4",
-      "path": "/market",
-      "title": "Dokon"
-    },
-    {
       "id": "5",
       "path": "/groups",
       "title": "Guruxlar"
@@ -35,35 +30,58 @@
   ],
   "techers": [
     {
-      "name": "test",
-      "sourname": "dwd",
-      "age": "22",
-      "stackId": "2",
-      "stack": "Backend",
-      "region": "Samarqand",
-      "regionId": "7",
-      "district": "dwdw",
-      "status": "Bosh ustoz",
-      "statusId": "3",
-      "experience": "ew",
+      "id": "cc87",
+      "name": "Nurulloh",
+      "sourname": "Suyunboyev",
+      "age": "21",
+      "stackId": "1",
+      "stack": "Fron-tend",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Shaykhontoxur",
+      "status": "Asosiy ustoz",
+      "statusId": "2",
+      "experience": "2 yil",
       "gender": "Erkak",
-      "email": "dwdw@dw.dwdwd",
-      "study": "wddw",
-      "phone": "+998",
-      "isMerried": "wdwdw",
+      "email": "Nurulloh@gmail.com",
+      "study": "TKTI",
+      "phone": "+998933332121",
+      "isMerried": "Yoq",
       "workCompany": [
-        "OpenAI",
-        "TikTok",
-        "Facebook",
-        "Google"
+        "Google",
+        "Telegram"
       ],
       "workCompanyId": [
-        "4",
-        "3",
-        "2",
-        "1"
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "788f",
+      "name": "Muhammadamin",
+      "sourname": "Nuriddinov",
+      "age": "17",
+      "stackId": "2",
+      "stack": "Backend",
+      "region": "Toshkent",
+      "regionId": "1",
+      "district": "Shaykhontoxur",
+      "status": "Yordamchi ustoz",
+      "statusId": "1",
+      "experience": "1 + proect",
+      "gender": "Erkak",
+      "email": "Muhammadamin@gmail.com",
+      "study": "Najot ta'lim",
+      "phone": "+998332221212",
+      "isMerried": "Yoq",
+      "workCompany": [
+        "TikTok",
+        "OpenAI"
       ],
-      "id": "c472"
+      "workCompanyId": [
+        "3",
+        "4"
+      ]
     }
   ],
   "stack": [
@@ -110,63 +128,16 @@
   ],
   "groups": [
     {
+      "id": "8bc7",
       "stackId": "1",
-      "name": "React JS N77",
+      "name": "N77 yangi gurux",
       "roomId": "2",
-      "mainTeacher": "Nurillo Suyunboyev",
-      "teacherId": "1",
+      "mainTeacher": "Nurulloh",
+      "teacherId": "cc87",
       "room": "Tesla",
       "status": true,
-      "createdAt": "03.08.2024",
-      "supportTeacher": "Isroil Omonjonov",
-      "id": "1"
-    },
-    {
-      "id": "2",
-      "stackId": "2",
-      "name": "Backend NodeJS N76",
-      "createdAt": "03.08.2024",
-      "status": false,
-      "mainTeacher": "Valijon Quvondiqov",
-      "teacherId": "bc99",
-      "supportTeacher": "Isroil Omonjonov",
-      "room": "Tesla",
-      "roomId": "2"
-    },
-    {
-      "id": "3",
-      "stackId": "2",
-      "name": "Backend Java N2",
-      "createdAt": "01.02.2024",
-      "status": true,
-      "mainTeacher": "Hondamir Usmonov",
-      "teacherId": "f2b9",
-      "supportTeacher": "Ibrohimjon Sadriddinov",
-      "room": "Instagram",
-      "roomId": "3"
-    },
-    {
-      "id": "01d3",
-      "stackId": "1",
-      "name": "N82",
-      "mainTeacher": "Nurilloddd",
-      "teacherId": "1",
-      "room": "Facebook",
-      "status": true,
-      "createdAt": "2025-02-10",
+      "createdAt": "2025-02-14",
       "supportTeacher": "Muhammadamin"
-    },
-    {
-      "id": "2a75",
-      "stackId": "2",
-      "name": "n11",
-      "roomId": "4",
-      "mainTeacher": "test",
-      "teacherId": "c472",
-      "room": "Osmondagi bolalar",
-      "status": true,
-      "createdAt": "2025-02-11",
-      "supportTeacher": "das"
     }
   ],
   "regions": [
@@ -281,38 +252,22 @@
   ],
   "students": [
     {
-      "id": "1",
-      "studentId": "18295",
-      "name": "Eldor",
-      "surname": "Xudoyiberganov",
-      "guroupId": "2",
-      "group":"React JS N77",
+      "studentId": "12311",
+      "name": "MuhammadaminStu",
+      "surname": "Nuriddinov",
+      "groupId": "8bc7",
+      "group": "N77 yangi gurux",
       "stackId": "1",
-      "age": "16",
+      "stack": "Fron-tend",
       "region": "Toshkent",
       "regionId": "1",
-      "district": "Olmazor tumani",
-      "study": "33 - maktab",
+      "district": "Shaykhontoxur",
+      "age": "17",
+      "study": "102-maktab",
+      "email": "Muhammadamin@gmail.com",
+      "phone": "+998221113211",
       "status": true,
-      "phone": "+998904445566",
-      "email": "eldor@gmail.com"
-    },
-    {
-      "id": "2",
-      "studentId": "27771",
-      "name": "Temur",
-      "surname": "Tolibov",
-      "guroupId": "2",
-      "group":"Backend NodeJS N72",
-      "stackId": "2",
-      "age": "28",
-      "region": "Fargona",
-      "regionId": "2",
-      "district": "Fargona Shahar",
-      "study": "Islamic academy",
-      "status": true,
-      "phone": "+998904445566",
-      "email": "temur@gmail.com"
+      "id": "a223"
     }
   ],
   "rooms": [

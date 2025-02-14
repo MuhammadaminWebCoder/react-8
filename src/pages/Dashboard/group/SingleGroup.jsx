@@ -27,10 +27,7 @@ const singleGroup = () => {
         }, 1000);
       }
       else{
-        toast.success("bu gurux ochirildi")
-          setDeleteLoading(false)
-          setDeleteModal(false)
-        deleteUser(`/groups/${groupId}`,setDeleteLoading,setDeleteModal,navigate,toast)
+        deleteUser(`/groups/${groupId}`,setDeleteLoading,navigate,setDeleteModal,toast)
       }
     })
 }

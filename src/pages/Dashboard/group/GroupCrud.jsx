@@ -57,7 +57,7 @@ const GroupCrud = () => {
           <Input value={name} onChange={(e) => setName(e.target.value)} allowClear required size='large' placeholder='Gurux nomini Kiriting' />
           <FilterCustom API={`/techers?stackId=${stackId}`} extraclass={'w-full'} placeholder={"Ustoz tanlang"} filterId={teacherId} setFilterName={setMainTeacher} setFilterId={setTeacherId}/>
           <Input value={supportTeacher} onChange={(e) => setSupportTeacher(e.target.value)} allowClear required size='large' placeholder='Yordamchi ustozning ismi' />
-          <FilterCustom API={"/rooms"} extraclass={'w-full'} placeholder={"Ustoz tanlang"} filterId={roomId} setFilterName={setRoom} setFilterId={setRoomId}/>
+          <FilterCustom API={"/rooms"} extraclass={'w-full'} placeholder={"Xona tanlang"} filterId={roomId} setFilterName={setRoom} setFilterId={setRoomId}/>
           <DatePicker onChange={(a,b) => setCreatedAt(b)} className='w-full' size='large' defaultValue={dayjs(createdAt,dateFormat)}/>
         </div>
     </div>

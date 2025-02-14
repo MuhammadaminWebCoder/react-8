@@ -8,7 +8,7 @@ const Navbar = () => {
   const menuList = dashboardNavList.map(item => {
     const data = {
         key: item.id,
-        label:<Link className='pl-2 text-[15px]' to={item.path}> {item.title} </Link>,
+        label:<Link className={`pl-2 text-[15px]`} to={item.path}> {item.title} </Link>,
         icon:item.icon,
     }
     return data

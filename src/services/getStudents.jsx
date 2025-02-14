@@ -19,7 +19,7 @@ export const getStudents = (groupId, refresh, setStudents) => {
         item.surname = item.surname ? item.surname : <LineOutlined />;
         item.age = item.age ? item.age : <LineOutlined />;
         item.status = item.status?'active':'active emas'
-        item.action = <Button  onClick={() => navigate(`${item.id}`)} className="!w-[32px] !h-[32px]" type='primary'><MoreOutlined className='rotate-90' /></Button>
+        item.action = <Button  onClick={() => navigate(`/students/${item.id}`)} className="!w-[32px] !h-[32px]" type='primary'><MoreOutlined className='rotate-90' /></Button>
         return item;
       }));
     });
