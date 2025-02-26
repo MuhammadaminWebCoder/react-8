@@ -29,10 +29,10 @@ const Login = () => {
   return (
     <div className='flex items-center justify-center h-[100vh]'>
       <Toaster position='top-center' reverseOrder={false}/>
-      <div className="w-[360px] text-center mx-auto">
+      <div className="min-[400px]:w-[360px] w-[240px] text-center mx-auto">
         <div className="flex items-center justify-center gap-[10px] main-color mb-[25px]">
             <Logo/>
-            <span className='text-black text-[30px] font-medium'>Admin Paneli</span>
+            <span className='text-black min-[400px]:text-[30px] text-2xl font-medium'>Admin Paneli</span>
         </div>
         <Form onFinish={handleSubmitLogin} className='w-full text-start' autoComplete='off'>
           <Form.Item name={"username"}

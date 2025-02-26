@@ -8,7 +8,7 @@ const Navbar = () => {
   const menuList = dashboardNavList.map(item => {
     const data = {
         key: item.id,
-        label:<Link className={`pl-2 text-[15px]`} to={item.path}> {item.title} </Link>,
+        label:<Link className={`pl-2 text-[15px] ${item.path}`} to={item.path}> {item.title} </Link>,
         icon:item.icon,
     }
     return data
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <Menu
-      className={`${hideMenu ? '' : '!w-[20%]'} h-[90vh] overflow-y-auto`}
+      className={`${hideMenu ? '!w-[80px]' : '!w-[250px]'} h-[90vh] overflow-y-auto`}
       defaultSelectedKeys={['1']}
       defaultOpenKeys={['sub1']}
       mode='inline'

@@ -86,7 +86,7 @@
   ],
   "stack": [
     {
-      "name": "Fron-tend",
+      "name": "Frontend",
       "image": "https://funix.edu.vn/wp-content/uploads/2022/02/Frontend-Developer.jpeg",
       "id": "1"
     },
@@ -101,9 +101,9 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPV0S6QPMqXN7rCVsTPsQzKSWcb2mpBU6Z4Q&s"
     },
     {
-      "id": "4",
       "name": "Graphic design",
-      "image": "https://inspiria.edu.in/wp-content/uploads/Career-in.-graphic-designers.webp"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyYYAhEoXWOcyx0sjHiaK2TrmUNxxMJdE6g&s",
+      "id": "4"
     },
     {
       "id": "5",

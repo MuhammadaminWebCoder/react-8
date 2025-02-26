@@ -21,11 +21,11 @@ const Header = () => {
   }
   return (
     <div className='flex justify-between bg-[#01152a]'>
-      <div className={`${hideMenu ?'w-[80px]':'w-[20%]'} duration-300 w-[20%] main-color flex items-center gap-5 p-4`}>
+      <div className={`${hideMenu ?'w-[80px]':'w-[250px]'} duration-300 w-[20%] main-color flex items-center gap-5 p-4`}>
           <Logo/>
           <span className={`text-white text-[20px] ${hideMenu && 'hidden opacity-0'}`} >Administratsiya</span>
       </div>
-      <div className={`${hideMenu ? 'w-full' : 'w-[80%]'} text-white flex items-center justify-between px-[10px]`}>
+      <div className={`${hideMenu ? 'w-full' : 'flex-1'} text-white flex items-center justify-between px-[10px]`}>
       <div className='text-3xl' onClick={() => setHideMenu(!hideMenu)}>{hideMenu ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}</div>
         <div className="flex gap-5">
             <Tooltip placement='bottom' title={"Oxirgi malumot yengilangan vaqt : 30 yan , 2025 19:12"}>

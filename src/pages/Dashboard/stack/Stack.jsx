@@ -22,7 +22,7 @@ const Stack = () => {
   return (
     <div className='p-5'>
       <Caption addLink={'add'} title={'Yonalishlar'} count={stackList.length} icon={<CodeSandboxOutlined/>} />
-      <ul className='flex mt-8 flex-wrap gap-5'>
+      <ul className='flex w-full mt-8 justify-between flex-wrap gap-5'>
         {stackList.map((item,ind) => (
           <Card className='w-[250px]' key={ind} hoverable cover={<img onClick={() => navigate(`${item.id}`)} alt='example' className='h-[140px] object-cover' src={item.image} />}>
             <Card.Meta title={item.name} description={CardContent(navigate,item.id)} />
